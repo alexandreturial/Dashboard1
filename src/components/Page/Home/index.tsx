@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../Card';
+import ClimaInfo from '../../ClimaInfo';
 
 import {
   Container,
@@ -14,22 +15,10 @@ const Home: React.FC = ({ children }) => {
       <Title>My Dashboard</Title>
       <MainData>
         <Card type="TM">
-         
+          <ClimaInfo/>
         </Card>
         <Card type="UM">
-          <div>
-            <header id="water">
-              <GiWaterDrop/>
-              umidade
-            </header>
-            <main>
-            30%
-            </main>
-          </div>
-          <aside>
-            <button style={{background:"#E75E52", padding: "5px"}}><RiArrowUpSLine size={25} color="#FFF"/></button>
-            <button style={{background:"#D4CEE5", padding: "5px"}}><RiArrowDownSLine size={25}/></button>
-          </aside>
+          <ClimaInfo/>
         </Card>
         <Card type="GR1">
           GR1
