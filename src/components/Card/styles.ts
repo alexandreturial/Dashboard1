@@ -17,5 +17,6 @@ export const Container = styled.div<IContainerProps>`
   padding: 25px 10px;
 
   color: ${props =>props.theme.colors.secundary};
-
+  
+  
 `;

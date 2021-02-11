@@ -5,7 +5,7 @@ import GlocalStyles from './styles/global';
 
 import { useTheme } from './hooks/Theme';
 import Layout from './components/Layout';
-import Home from './components/Page/Home';
+import Home from './Page/Home';
 
 
 const App: React.FC = () => {

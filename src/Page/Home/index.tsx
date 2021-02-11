@@ -1,6 +1,8 @@
 import React from 'react';
-import Card from '../../Card';
-import ClimaInfo from '../../ClimaInfo';
+import PieChart from '../../components/Piechart';
+import Card from '../../components/Card';
+import ClimaInfo from '../../components/ClimaInfo';
+import Barchart from '../../components/Barchart';
 
 import {
   Container,
@@ -9,7 +11,7 @@ import {
 
 } from './styles';
 
-const Home: React.FC = ({ children }) => {
+const Home: React.FC = () => {
   return (
     <Container>
       <Title>My Dashboard</Title>
@@ -21,10 +23,10 @@ const Home: React.FC = ({ children }) => {
           <ClimaInfo/>
         </Card>
         <Card type="GR1">
-          GR1
+          <Barchart/>
         </Card>
         <Card type="GR2">
-          GR2
+          <PieChart/>
         </Card>
       </MainData>
     </Container>
